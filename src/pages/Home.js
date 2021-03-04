@@ -1,5 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import MenuBar from "../components/MenuBar";
+import SearchField from "../components/SearchField";
+import IconList from "../components/Icons/IconList";
 
 import { Row, Col } from "antd";
 import { Layout } from "antd";
@@ -7,16 +9,24 @@ const { Content } = Layout;
 
 const Home = () => {
   return (
-    <Layout className="layout">
-      <MenuBar />
-      <Content style={{ padding: "5rem" }}>
-        <Row>
-          <Col span={12} offset={6}>
-            col-12 col-offset-6
-          </Col>
-        </Row>
-      </Content>
-    </Layout>
+    <Fragment>
+      <Layout className="layout">
+        <MenuBar />
+        <Content style={{ padding: "5rem" }}>
+          <Row>
+            <Col span={12} offset={6}>
+              <SearchField />
+            </Col>
+          </Row>
+        </Content>
+      </Layout>
+
+      <Row style={{ marginTop: "2rem" }}>
+        <Col span={12} offset={6}>
+          <IconList />
+        </Col>
+      </Row>
+    </Fragment>
   );
 };
 
