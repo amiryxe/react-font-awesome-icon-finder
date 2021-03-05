@@ -1,17 +1,24 @@
 import React from "react";
 import { Card } from "antd";
 
-const IconItem = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas);
+
+const IconItem = ({ icon }) => {
   return (
     <Card
       size="small"
-      title="Small size card"
+      title={icon}
       extra={<a href="#">copy</a>}
-      style={{ width: 300 }}
+      style={{ width: "30%", display: "inline-block", margin: "1rem" }}
     >
-      <p>Card content</p>
-      <p>Card content</p>
-      <p>Card content</p>
+      <h2 style={{ textAlign: "center", fontSize: "3rem", margin: 0 }}>
+        <FontAwesomeIcon icon={icon} />
+      </h2>
     </Card>
   );
 };

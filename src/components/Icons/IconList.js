@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import IconItem from "./IconItem";
+import iconNameList from "../../resources/iconNames/list";
 
 const IconList = () => {
   return (
-    <div>
-      <IconItem />
-    </div>
+    <Fragment>
+      {iconNameList.map((item, index) => (
+        <IconItem key={index} icon={item} />
+      ))}
+    </Fragment>
   );
 };
 

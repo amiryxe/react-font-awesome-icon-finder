@@ -22,7 +22,7 @@ const Home = () => {
       </Layout>
 
       <Row style={{ marginTop: "2rem" }}>
-        <Col span={12} offset={6}>
+        <Col span={16} offset={4}>
           <IconList />
         </Col>
       </Row>
