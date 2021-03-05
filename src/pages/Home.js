@@ -15,7 +15,7 @@ const Home = () => {
         <Content style={{ padding: "5rem" }}>
           <Row>
             <Col span={12} offset={6}>
-              <SearchField searchField />
+              <SearchField />
             </Col>
           </Row>
         </Content>
