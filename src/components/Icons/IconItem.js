@@ -14,7 +14,7 @@ const IconItem = ({ icon }) => {
       size="small"
       title={icon}
       extra={<a href="#">copy</a>}
-      style={{ width: "30%", display: "inline-block", margin: "1rem" }}
+      style={{ width: "100%", display: "inline-block" }}
     >
       <h2 style={{ textAlign: "center", fontSize: "3rem", margin: 0 }}>
         <FontAwesomeIcon icon={icon} />
