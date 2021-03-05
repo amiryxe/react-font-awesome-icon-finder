@@ -7,7 +7,7 @@ const IconList = () => {
   return (
     <Row>
       {iconNameList.map((item, index) => (
-        <Col span={8} style={{ padding: "1rem" }}>
+        <Col span={4} style={{ padding: "1rem" }}>
           <IconItem key={index} icon={item} />
         </Col>
       ))}
