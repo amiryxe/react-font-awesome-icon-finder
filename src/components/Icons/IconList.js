@@ -1,12 +1,14 @@
-import React, { Fragment } from "react";
+import React, { useContext } from "react";
 import IconItem from "./IconItem";
-import iconNameList from "../../resources/iconNames/list";
 import { Row, Col } from "antd";
+import MainContext from "../../context/mainContext";
 
 const IconList = () => {
+  const { iconList } = useContext(MainContext);
+
   return (
     <Row>
-      {iconNameList.map((item, index) => (
+      {[...iconList].map((item, index) => (
         <Col span={4} style={{ padding: "1rem" }}>
           <IconItem key={index} icon={item} />
         </Col>

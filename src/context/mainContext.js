@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-const IconsContext = createContext();
+const MainContext = createContext();
 
-export default IconsContext;
+export default MainContext;
