@@ -1,11 +1,14 @@
 import "./App.css";
 import { Home } from "./pages";
+import MainState from "./context/MainState";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <MainState>
+      <div className="App">
+        <Home />
+      </div>
+    </MainState>
   );
 }
 

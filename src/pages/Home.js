@@ -1,4 +1,6 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
+import MainContext from "../context/mainContext";
+
 import MenuBar from "../components/MenuBar";
 import SearchField from "../components/SearchField";
 import IconList from "../components/Icons/IconList";
@@ -8,6 +10,7 @@ import { Layout } from "antd";
 const { Content } = Layout;
 
 const Home = () => {
+  const { searchFieldText } = useContext(MainContext);
   return (
     <Fragment>
       <Layout className="layout">
@@ -16,6 +19,7 @@ const Home = () => {
           <Row>
             <Col span={12} offset={6}>
               <SearchField />
+              <h1>{searchFieldText}</h1>
             </Col>
           </Row>
         </Content>
