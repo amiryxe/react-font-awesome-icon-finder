@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import MainContext from "./mainContext";
 
 const MainState = (props) => {
-  const [searchFieldText, setSearchFieldText] = useState(null);
+  const [searchFieldText, setSearchFieldText] = useState("");
 
-  const mappedList = new Set([
+  const iconsList = new Set([
     "ad",
     "address-book",
     "address-card",
@@ -1007,7 +1007,7 @@ const MainState = (props) => {
     "yen-sign",
     "yin-yang",
   ]);
-  const [iconList, setIconList] = useState(mappedList);
+  const [iconList, setIconList] = useState(iconsList);
 
   return (
     <MainContext.Provider

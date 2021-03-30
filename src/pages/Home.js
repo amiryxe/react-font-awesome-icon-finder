@@ -3,7 +3,6 @@ import MainContext from "../context/mainContext";
 
 import MenuBar from "../components/MenuBar";
 import SearchField from "../components/SearchField";
-// import IconList from "../components/Icons/IconList";
 
 import { Row, Col } from "antd";
 import { Layout } from "antd";

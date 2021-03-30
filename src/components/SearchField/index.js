@@ -5,7 +5,7 @@ import { Input, Typography } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 const { Title } = Typography;
 
-const SearchField = (props) => {
+const SearchField = () => {
   const { searchFieldText, setSearchFieldText } = useContext(MainContext);
 
   return (
