@@ -1,16 +1,18 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment, useContext, Suspense } from "react";
 import MainContext from "../context/mainContext";
 
 import MenuBar from "../components/MenuBar";
 import SearchField from "../components/SearchField";
-import IconList from "../components/Icons/IconList";
+// import IconList from "../components/Icons/IconList";
 
 import { Row, Col } from "antd";
 import { Layout } from "antd";
 const { Content } = Layout;
 
+const IconList = React.lazy(() => import("../components/Icons/IconList"));
 const Home = () => {
   const { searchFieldText } = useContext(MainContext);
+
   return (
     <Fragment>
       <Layout className="layout">
@@ -27,7 +29,9 @@ const Home = () => {
 
       <Row style={{ marginTop: "2rem" }}>
         <Col span={16} offset={4}>
-          <IconList />
+          <Suspense fallback={<div>Loading...</div>}>
+            <IconList />
+          </Suspense>
         </Col>
       </Row>
     </Fragment>
