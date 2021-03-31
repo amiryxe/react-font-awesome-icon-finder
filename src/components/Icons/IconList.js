@@ -9,8 +9,8 @@ const IconList = () => {
   return (
     <Row>
       {[...iconList].map((item, index) => (
-        <Col span={4} style={{ padding: "1rem" }}>
-          <IconItem key={index} icon={item} />
+        <Col key={index} span={4} style={{ padding: "1rem" }}>
+          <IconItem icon={item} />
         </Col>
       ))}
     </Row>
