@@ -8,7 +8,7 @@ const IconList = () => {
 
   return (
     <Row>
-      {[...iconList].map((item, index) => (
+      {[...iconList].splice(0, 12).map((item, index) => (
         <Col key={index} span={4} style={{ padding: "1rem" }}>
           <IconItem icon={item} />
         </Col>
