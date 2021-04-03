@@ -1,7 +1,5 @@
 import React, { Fragment, useContext, Suspense } from "react";
 import MainContext from "../context/mainContext";
-
-import MenuBar from "../components/MenuBar";
 import SearchField from "../components/SearchField";
 
 import { Row, Col } from "antd";
@@ -15,7 +13,6 @@ const Home = () => {
   return (
     <Fragment>
       <Layout className="layout">
-        <MenuBar />
         <Content style={{ padding: "5rem" }}>
           <Row>
             <Col span={12} offset={6}>
