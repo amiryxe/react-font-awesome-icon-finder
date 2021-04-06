@@ -6,7 +6,7 @@ import MainContext from "../../context/mainContext";
 const IconList = ({ filter }) => {
   const { iconList } = useContext(MainContext);
 
-  const filteredItems = iconList.has(filter) ? filter : [...iconList];
+  const filteredItems = iconList.filter((itam) => itam.match(filter));
 
   return (
     <Row>

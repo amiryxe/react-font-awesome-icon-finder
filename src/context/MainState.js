@@ -4,7 +4,7 @@ import MainContext from "./mainContext";
 const MainState = (props) => {
   const [searchFieldText, setSearchFieldText] = useState("");
 
-  const iconsList = new Set([
+  const iconsList = [
     "ad",
     "address-book",
     "address-card",
@@ -1006,7 +1006,7 @@ const MainState = (props) => {
     "x-ray",
     "yen-sign",
     "yin-yang",
-  ]);
+  ];
   const [iconList, setIconList] = useState(iconsList);
 
   return (
