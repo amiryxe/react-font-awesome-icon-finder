@@ -17,7 +17,6 @@ const Home = () => {
           <Row>
             <Col span={12} offset={6}>
               <SearchField />
-              <h1>{searchFieldText}</h1>
             </Col>
           </Row>
         </Content>
