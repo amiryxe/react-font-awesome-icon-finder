@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import IconItem from "./IconItem";
 import { Row, Col } from "antd";
 import MainContext from "../../context/mainContext";
@@ -7,7 +7,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const IconList = ({ filter }) => {
   const { iconList } = useContext(MainContext);
 
-  const data = iconList.filter((itam) => itam.match(filter));
+  const data = iconList.filter((item) => item.match(filter));
 
   const [count, setCount] = useState({
     prev: 0,
@@ -15,7 +15,9 @@ const IconList = ({ filter }) => {
   });
 
   const [hasMore, setHasMore] = useState(true);
+
   const [current, setCurrent] = useState(data.slice(count.prev, count.next));
+
   const getMoreData = () => {
     if (current.length === data.length) {
       setHasMore(false);
@@ -23,7 +25,7 @@ const IconList = ({ filter }) => {
     }
     setTimeout(() => {
       setCurrent(current.concat(data.slice(count.prev + 10, count.next + 10)));
-    }, 2000);
+    }, 1000);
     setCount((prevState) => ({
       prev: prevState.prev + 10,
       next: prevState.next + 10,
