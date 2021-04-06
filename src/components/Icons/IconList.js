@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import IconItem from "./IconItem";
 import { Row, Col } from "antd";
 import MainContext from "../../context/mainContext";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 const IconList = ({ filter }) => {
   const { iconList } = useContext(MainContext);
