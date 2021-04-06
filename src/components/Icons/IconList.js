@@ -3,12 +3,14 @@ import IconItem from "./IconItem";
 import { Row, Col } from "antd";
 import MainContext from "../../context/mainContext";
 
-const IconList = () => {
+const IconList = ({ filter }) => {
   const { iconList } = useContext(MainContext);
+
+  const filteredItems = iconList.has(filter) ? filter : [...iconList];
 
   return (
     <Row>
-      {[...iconList].splice(0, 12).map((item, index) => (
+      {filteredItems.map((item, index) => (
         <Col key={index} span={4} style={{ padding: "1rem" }}>
           <IconItem icon={item} />
         </Col>

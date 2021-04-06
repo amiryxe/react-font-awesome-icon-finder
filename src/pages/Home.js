@@ -25,7 +25,7 @@ const Home = () => {
       <Row style={{ marginTop: "2rem" }}>
         <Col span={16} offset={4}>
           <Suspense fallback={<div>Loading...</div>}>
-            <IconList />
+            <IconList filter={searchFieldText} />
           </Suspense>
         </Col>
       </Row>
