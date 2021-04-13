@@ -33,23 +33,21 @@ const IconList = ({ filter }) => {
   };
 
   return (
-    <Row>
-      <InfiniteScroll
-        dataLength={current.length}
-        next={getMoreData}
-        hasMore={hasMore}
-        loader={<h4>Loading...</h4>}
-      >
-        <div>
-          {current &&
-            current.map((item, index) => (
-              <Col key={index} span={4} style={{ padding: "1rem" }}>
-                <IconItem icon={item} />
-              </Col>
-            ))}
-        </div>
-      </InfiniteScroll>
-    </Row>
+    <InfiniteScroll
+      dataLength={current.length}
+      next={getMoreData}
+      hasMore={hasMore}
+      loader={<h4>Loading...</h4>}
+    >
+      <Row>
+        {current &&
+          current.map((item, index) => (
+            <Col key={index} span={4} style={{ padding: "1rem" }}>
+              <IconItem icon={item} />
+            </Col>
+          ))}
+      </Row>
+    </InfiniteScroll>
   );
 };
 
