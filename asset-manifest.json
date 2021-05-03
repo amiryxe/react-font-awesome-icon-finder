@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-font-awesome-icon-finder/static/css/main.7176885d.chunk.css",
+    "main.js": "/react-font-awesome-icon-finder/static/js/main.050b45d7.chunk.js",
+    "main.js.map": "/react-font-awesome-icon-finder/static/js/main.050b45d7.chunk.js.map",
+    "runtime-main.js": "/react-font-awesome-icon-finder/static/js/runtime-main.bf91327e.js",
+    "runtime-main.js.map": "/react-font-awesome-icon-finder/static/js/runtime-main.bf91327e.js.map",
+    "static/css/2.fc2db407.chunk.css": "/react-font-awesome-icon-finder/static/css/2.fc2db407.chunk.css",
+    "static/js/2.5026a410.chunk.js": "/react-font-awesome-icon-finder/static/js/2.5026a410.chunk.js",
+    "static/js/2.5026a410.chunk.js.map": "/react-font-awesome-icon-finder/static/js/2.5026a410.chunk.js.map",
+    "static/js/3.e36ffc1b.chunk.js": "/react-font-awesome-icon-finder/static/js/3.e36ffc1b.chunk.js",
+    "static/js/3.e36ffc1b.chunk.js.map": "/react-font-awesome-icon-finder/static/js/3.e36ffc1b.chunk.js.map",
+    "static/js/4.50180df5.chunk.js": "/react-font-awesome-icon-finder/static/js/4.50180df5.chunk.js",
+    "static/js/4.50180df5.chunk.js.map": "/react-font-awesome-icon-finder/static/js/4.50180df5.chunk.js.map",
+    "index.html": "/react-font-awesome-icon-finder/index.html",
+    "static/css/2.fc2db407.chunk.css.map": "/react-font-awesome-icon-finder/static/css/2.fc2db407.chunk.css.map",
+    "static/css/main.7176885d.chunk.css.map": "/react-font-awesome-icon-finder/static/css/main.7176885d.chunk.css.map",
+    "static/js/2.5026a410.chunk.js.LICENSE.txt": "/react-font-awesome-icon-finder/static/js/2.5026a410.chunk.js.LICENSE.txt",
+    "static/js/3.e36ffc1b.chunk.js.LICENSE.txt": "/react-font-awesome-icon-finder/static/js/3.e36ffc1b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf91327e.js",
+    "static/css/2.fc2db407.chunk.css",
+    "static/js/2.5026a410.chunk.js",
+    "static/css/main.7176885d.chunk.css",
+    "static/js/main.050b45d7.chunk.js"
+  ]
+}
