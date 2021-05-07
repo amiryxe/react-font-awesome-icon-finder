@@ -11,7 +11,7 @@ const IconList = ({ filter }) => {
 
   const [count, setCount] = useState({
     prev: 0,
-    next: 10,
+    next: 24,
   });
 
   const [hasMore, setHasMore] = useState(true);
