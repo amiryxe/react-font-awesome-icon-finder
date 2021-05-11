@@ -18,6 +18,7 @@ const IconList = ({ filter }) => {
 
   const [current, setCurrent] = useState(data.slice(count.prev, count.next));
 
+  // preparing data
   const getMoreData = () => {
     if (current.length === data.length) {
       setHasMore(false);
